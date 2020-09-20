@@ -1,0 +1,112 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "montserrat", sans-serif;
+  background: url(images/bg_image.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.main_container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.6)
+  );
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px 15px;
+}
+
+header input {
+  width: 100%;
+  max-width: 300px;
+  padding: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  color: #1d1d1d;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+header input:focus {
+  background-color: rgba(255, 255, 255, 0.6);
+  transition: 0.8s ease-out;
+}
+
+header input:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: 0.8s ease-in-out;
+}
+
+header input::placeholder {
+  font-family: "montserrat", sans-serif;
+}
+
+header input[type="text"] {
+  font-family: "montserrat", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 100%;
+  padding: 25px 25px 50px;
+  align-items: center;
+  text-align: center;
+}
+
+.location .city {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.location .date {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.current .temp {
+  font-size: 120px;
+  font-weight: 900;
+  margin: 30px 0;
+  color: #ffffff;
+  text-shadow: 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.current .temp span {
+  font-weight: 400;
+}
+
+.current .weather {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: 600;
+  margin-bottom: 5px;
+  font-style: italic;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.current .hi-low {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 500;
+  text-shadow: 0 3px rgba(0, 0, 0, 0.5);
+}
